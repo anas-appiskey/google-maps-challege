@@ -9,4 +9,3 @@ DO NOT SHARE IT WITH ANYONE
 
 https://kit.fontawesome.com/c939d0e917.js
 
-AIzaSyBzfIqPXq3E94UIx-HStcpvI5Fu6kqFvI0

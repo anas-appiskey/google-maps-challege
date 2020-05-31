@@ -10,3 +10,64 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.title{
+    position: absolute;
+    font-size: 65px;
+    z-index: 10;
+    font-weight: bold;
+    top: 100px;
+    text-transform: uppercase;
+    left: 100px;
+    color: #333;
+}
+
+.search-container{
+  
+    width: 344px;
+    height: 51px;
+    background-color: #454E54;
+    position: absolute;
+    z-index: 30;
+    top: 207px;
+    left: 135px;
+    border-radius: 30px;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.search input{
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search i{
+    font-size: 23px;
+    color: white;
+}
+
+
+.stores-list-container{
+    width: 344px;
+    background-color: black;
+    position: absolute;
+    z-index: 30;
+    top: 278px;
+    left: 135px;
+    border-radius: 30px;
+    bottom: 14px;
+}
