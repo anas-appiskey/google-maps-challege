@@ -53,16 +53,26 @@ function showStoreMarkers(){
       store.coordinates.longitude);
     var address= store.addressLines[0];
     var name = store.name;
+    var statusText = store.openStatusText;
+    var phone = store.phoneNumber;
     bounds.extend(latlng);// add new values for new locator to get in a close view
 
-    createMarker(latlng,name,address)
+    createMarker(latlng,name,address,statusText,phone)
   })
   map.fitBounds(bounds);
 
 }
 
-function createMarker(latlng, name, address) {
-  var html = "<b>" + name + "</b> <br/>" + address;
+function createMarker(latlng, name, address,statusText,phone) {
+  var html =`
+    <div class="store-info-window">
+      <div class="store-info-name"> ${name}</div>
+      <div class="store-info-status">${statusText}</div>
+      <div class="store-info-address"><div class="circle"><i class="fas fa-location-arrow"></i></div>${address}</div>
+      <div class="store-info-phone"><div class="circle"><i class="fas fa-phone-alt"></i></div> ${phone}</div>
+    </div>
+  
+  `;
   var marker = new google.maps.Marker({
     map: map,
     position: latlng

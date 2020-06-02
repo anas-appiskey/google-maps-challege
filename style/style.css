@@ -146,3 +146,44 @@ margin-top: 11px;
   ::-webkit-scrollbar-thumb:hover {
     background: gray; 
   }
+
+
+  .store-info-window{
+    min-width: 230px;
+    font-size: 15px;
+    padding:15px 20px 18px 10px;
+  }
+
+  .store-info-name{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+  }
+
+  .store-info-status{
+    margin-top: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000926;
+}
+ .store-info-address,  .store-info-phone{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .gm-style-iw-d{
+    overflow: hidden !important;
+  }
+  .store-info-address  .circle, .store-info-phone .circle{
+    width: 30px;
+    height: 30px;
+    background-color: #1985A1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 8px;
+    justify-content: center;
+  }
+
